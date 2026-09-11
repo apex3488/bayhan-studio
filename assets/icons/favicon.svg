@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BAYHAN STUDIO">
+  <rect width="64" height="64" rx="12" fill="#050505"/>
+  <rect x="1" y="1" width="62" height="62" rx="11" fill="none" stroke="#3d7eff" stroke-opacity="0.45"/>
+  <path d="M18 16h16.2c8.1 0 13.3 4.4 13.3 11.2 0 4.4-2.4 7.8-6.4 9.5 4.8 1.5 7.8 5.2 7.8 10.1 0 7.2-5.5 11.2-14 11.2H18V16zm11.8 14.6c3.9 0 6.2-1.9 6.2-4.8s-2.3-4.7-6.2-4.7H26.2v9.5h3.6zm.8 16.6c4.3 0 6.8-2 6.8-5.2s-2.5-5.1-6.8-5.1H26.2v10.3h4.4z" fill="#f5f6f8"/>
+  <circle cx="50" cy="14" r="2.2" fill="#3d7eff"/>
+</svg>

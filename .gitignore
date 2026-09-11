@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+node_modules/
+.cache/
+dist/
+*.log
+
+.env
+.env.*
