@@ -4,6 +4,7 @@
   .service-detail,
   .footer-grid {
     grid-template-columns: 1fr;
+    min-width: 0;
   }
 
   .hero-visual {
@@ -11,17 +12,19 @@
     right: auto;
     top: auto;
     width: 100%;
+    max-width: 100%;
     min-height: 220px;
     order: -1;
     margin-bottom: 1.5rem;
   }
 
   .hero-title {
-    font-size: clamp(3rem, 16vw, 5.4rem);
+    font-size: clamp(2.6rem, 8vw, 5.4rem);
   }
 
   .service-detail .abstract-panel {
     min-height: 140px;
+    max-width: 100%;
   }
 
   .why-grid {
@@ -31,6 +34,7 @@
   .contact-link {
     grid-template-columns: 1fr;
     gap: 0.35rem;
+    min-width: 0;
   }
 }
 
@@ -47,15 +51,136 @@
   }
 
   .nav-inner {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.75rem;
+    max-width: 100%;
   }
 
   .menu-toggle {
     display: grid;
+    flex-shrink: 0;
   }
 
+  .logo {
+    min-width: 0;
+    max-width: 100%;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    gap: 0.45rem;
+  }
+
+  .logo span {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .logo-mark {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .container,
+  .hero-grid,
+  .hero-grid > *,
+  .intro-layout,
+  .section,
+  .service-list,
+  .service-row,
+  .about-block,
+  .process-step,
+  .footer-grid,
+  .contact-list,
+  .contact-link,
+  .cta-finale,
+  .next-block {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    width: 100%;
+    max-width: 100%;
+    font-size: min(2.75rem, calc((100vw - (2 * var(--gutter))) / 7));
+  }
+
+  .hero-title .line,
   .hero-title .line-studio {
     margin-left: 0;
+    max-width: 100%;
+  }
+
+  .hero-copy,
+  .lead {
+    max-width: 100%;
+  }
+
+  .hero-slogan {
+    font-size: clamp(1.15rem, 5.6vw, 1.6rem);
+    overflow-wrap: anywhere;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    letter-spacing: 0.14em;
+  }
+
+  .btn-row {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .magnetic {
+    transform: none !important;
+  }
+
+  .cursor-dot,
+  .cursor-ring,
+  .cursor-label {
+    display: none !important;
+  }
+
+  .intro-title,
+  .page-title,
+  .tech-title,
+  .next-block h2,
+  .cta-finale h2,
+  .footer-brand,
+  .not-found .code {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .intro-title {
+    font-size: clamp(1.7rem, 8.4vw, 2.8rem);
+  }
+
+  .page-title,
+  .tech-title,
+  .next-block h2,
+  .cta-finale h2 {
+    font-size: clamp(1.75rem, 8.8vw, 3.1rem);
+  }
+
+  .footer-brand {
+    font-size: clamp(1.55rem, 8.4vw, 2.6rem);
+    line-height: 1;
   }
 
   .why-grid,
@@ -69,12 +194,52 @@
     display: none;
   }
 
+  .service-row h3,
+  .service-detail h2,
+  .contact-link strong {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  .service-row h3 {
+    font-size: clamp(1.15rem, 6.2vw, 1.7rem);
+  }
+
+  .chips {
+    max-width: 100%;
+  }
+
   .process-track::before {
     left: 0.35rem;
   }
 
   .process-dot {
     margin-left: 0;
+  }
+
+  .tech-marquee {
+    max-width: 100%;
+  }
+
+  .tech-marquee span {
+    font-size: clamp(1.05rem, 5.5vw, 1.6rem);
+  }
+
+  .mobile-nav {
+    padding: 5.5rem 1.15rem 2rem;
+    overflow-x: clip;
+  }
+
+  .mobile-nav a:not(.btn) {
+    font-size: clamp(1.7rem, 9vw, 2.6rem);
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .mobile-nav .btn,
+  .mobile-nav .lang-switch {
+    max-width: 100%;
   }
 
   .footer-bottom {
@@ -85,20 +250,91 @@
     max-height: none;
     opacity: 1;
   }
+
+  .hero-orb {
+    width: min(58%, 220px);
+    right: 4%;
+  }
+
+  .abstract-panel {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 430px) {
-  .btn-row {
-    flex-direction: column;
-    align-items: stretch;
+  :root {
+    --gutter: 1rem;
   }
 
   .btn {
     justify-content: center;
+    letter-spacing: 0.08em;
+    padding-inline: 1rem;
+    font-size: 0.72rem;
   }
 
   .hero {
     align-items: center;
+  }
+
+  .hero-title {
+    font-size: min(2.55rem, calc((100vw - (2 * var(--gutter))) / 7.05));
+  }
+
+  .not-found .code {
+    font-size: clamp(4.2rem, 28vw, 7rem);
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    --gutter: 0.9rem;
+  }
+
+  .hero-title {
+    font-size: min(2.4rem, calc((100vw - (2 * var(--gutter))) / 7.15));
+  }
+
+  .intro-title {
+    font-size: clamp(1.55rem, 8vw, 2.2rem);
+  }
+
+  .logo {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --gutter: 0.85rem;
+  }
+
+  .hero-title {
+    font-size: min(2.25rem, calc((100vw - (2 * var(--gutter))) / 7.25));
+  }
+
+  .eyebrow {
+    font-size: 0.64rem;
+    letter-spacing: 0.1em;
+    gap: 0.45rem;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --gutter: 0.75rem;
+  }
+
+  .hero-title {
+    font-size: min(2.1rem, calc((100vw - (2 * var(--gutter))) / 7.35));
+  }
+
+  .page-title,
+  .tech-title,
+  .next-block h2,
+  .cta-finale h2 {
+    font-size: clamp(1.55rem, 8.4vw, 2.2rem);
   }
 }
 
