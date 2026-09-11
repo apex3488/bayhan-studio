@@ -218,16 +218,26 @@ export function initAnimations() {
 
   const title = document.querySelector(".hero-title");
   if (title && !reduced()) {
-    splitTitle(title);
-    gsap.from(title.querySelectorAll(".char"), {
-      yPercent: 120,
-      opacity: 0,
-      filter: "blur(12px)",
-      duration: 1.05,
-      stagger: 0.028,
-      ease: "power4.out",
-      delay: 0.05
-    });
+    if (isMobile()) {
+      gsap.from(title, {
+        y: 28,
+        opacity: 0,
+        filter: "blur(10px)",
+        duration: 0.9,
+        ease: "power3.out"
+      });
+    } else {
+      splitTitle(title);
+      gsap.from(title.querySelectorAll(".char"), {
+        yPercent: 120,
+        opacity: 0,
+        filter: "blur(12px)",
+        duration: 1.05,
+        stagger: 0.028,
+        ease: "power4.out",
+        delay: 0.05
+      });
+    }
   }
 
   gsap.from(".hero-copy, .hero .btn-row, .scroll-hint, .hero-eyebrow", {
@@ -241,7 +251,7 @@ export function initAnimations() {
 
   if (ScrollTrigger && !reduced()) {
     const heroTitle = document.querySelector(".hero-title");
-    if (heroTitle) {
+    if (heroTitle && !isMobile()) {
       gsap.to(heroTitle, {
         y: 80,
         scale: 0.92,

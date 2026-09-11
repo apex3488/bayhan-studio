@@ -8,8 +8,8 @@ export const CONFIG = {
   telegramHandle: "@APEX348",
   phone: "+998507560233",
   phoneHref: "tel:+998507560233",
-  instagram: "https://instagram.com/apexstudio_348",
-  instagramHandle: "@apexstudio_348",
+  instagram: "https://instagram.com/bayhan_studio",
+  instagramHandle: "@bayhan_studio",
   siteName: "BAYHAN STUDIO",
   /**
    * Optional absolute origin for SEO after GitHub Pages deploy.

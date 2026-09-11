@@ -11,15 +11,12 @@
     position: relative;
     right: auto;
     top: auto;
+    left: auto;
     width: 100%;
     max-width: 100%;
     min-height: 220px;
     order: -1;
     margin-bottom: 1.5rem;
-  }
-
-  .hero-title {
-    font-size: clamp(2.6rem, 8vw, 5.4rem);
   }
 
   .service-detail .abstract-panel {
@@ -41,7 +38,13 @@
 @media (max-width: 860px) {
   :root {
     --nav-h: 72px;
-    --gutter: 1.15rem;
+    --gutter: 1.1rem;
+  }
+
+  html,
+  body {
+    overflow-x: visible;
+    max-width: 100%;
   }
 
   .nav-links,
@@ -53,7 +56,20 @@
   .nav-inner {
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 0.75rem;
+    width: 100%;
     max-width: 100%;
+    padding-inline: var(--gutter);
+    box-sizing: border-box;
+  }
+
+  .site-header .nav-inner.container,
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+    padding-inline: var(--gutter);
+    box-sizing: border-box;
+    container-type: inline-size;
   }
 
   .menu-toggle {
@@ -82,7 +98,12 @@
     flex-shrink: 0;
   }
 
-  .container,
+  .hero {
+    overflow: visible;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .hero-grid,
   .hero-grid > *,
   .intro-layout,
@@ -95,7 +116,10 @@
   .contact-list,
   .contact-link,
   .cta-finale,
-  .next-block {
+  .next-block,
+  .hero-copy,
+  .hero-visual,
+  .btn-row {
     min-width: 0;
     max-width: 100%;
   }
@@ -103,30 +127,40 @@
   .hero-title {
     width: 100%;
     max-width: 100%;
-    font-size: min(2.75rem, calc((100vw - (2 * var(--gutter))) / 7));
+    font-size: clamp(2.35rem, 11.6vw, 3.15rem);
+    font-size: clamp(2.35rem, 16.2cqi, 3.15rem);
   }
 
   .hero-title .line,
   .hero-title .line-studio {
     margin-left: 0;
     max-width: 100%;
+    white-space: nowrap;
+  }
+
+  .hero-title .char {
+    display: inline;
+    will-change: auto;
   }
 
   .hero-copy,
   .lead {
+    width: 100%;
     max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .hero-slogan {
-    font-size: clamp(1.15rem, 5.6vw, 1.6rem);
-    overflow-wrap: anywhere;
+    font-size: clamp(1.15rem, 5.4vw, 1.55rem);
+    overflow-wrap: break-word;
   }
 
   .eyebrow {
     max-width: 100%;
     white-space: normal;
     overflow-wrap: anywhere;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
   }
 
   .btn-row {
@@ -168,18 +202,18 @@
   }
 
   .intro-title {
-    font-size: clamp(1.7rem, 8.4vw, 2.8rem);
+    font-size: clamp(1.65rem, 8vw, 2.7rem);
   }
 
   .page-title,
   .tech-title,
   .next-block h2,
   .cta-finale h2 {
-    font-size: clamp(1.75rem, 8.8vw, 3.1rem);
+    font-size: clamp(1.7rem, 8.4vw, 3rem);
   }
 
   .footer-brand {
-    font-size: clamp(1.55rem, 8.4vw, 2.6rem);
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
     line-height: 1;
   }
 
@@ -227,8 +261,7 @@
   }
 
   .mobile-nav {
-    padding: 5.5rem 1.15rem 2rem;
-    overflow-x: clip;
+    padding: 5.5rem var(--gutter) 2rem;
   }
 
   .mobile-nav a:not(.btn) {
@@ -254,9 +287,18 @@
   .hero-orb {
     width: min(58%, 220px);
     right: 4%;
+    max-width: 100%;
+  }
+
+  .hero-canvas {
+    max-width: 100%;
   }
 
   .abstract-panel {
+    max-width: 100%;
+  }
+
+  .grid-bg {
     max-width: 100%;
   }
 }
@@ -278,7 +320,8 @@
   }
 
   .hero-title {
-    font-size: min(2.55rem, calc((100vw - (2 * var(--gutter))) / 7.05));
+    font-size: clamp(2.25rem, 11.2vw, 2.9rem);
+    font-size: clamp(2.25rem, 15.8cqi, 2.9rem);
   }
 
   .not-found .code {
@@ -292,11 +335,12 @@
   }
 
   .hero-title {
-    font-size: min(2.4rem, calc((100vw - (2 * var(--gutter))) / 7.15));
+    font-size: clamp(2.15rem, 10.8vw, 2.7rem);
+    font-size: clamp(2.15rem, 15.4cqi, 2.7rem);
   }
 
   .intro-title {
-    font-size: clamp(1.55rem, 8vw, 2.2rem);
+    font-size: clamp(1.5rem, 7.6vw, 2.15rem);
   }
 
   .logo {
@@ -311,7 +355,8 @@
   }
 
   .hero-title {
-    font-size: min(2.25rem, calc((100vw - (2 * var(--gutter))) / 7.25));
+    font-size: clamp(2.05rem, 10.4vw, 2.55rem);
+    font-size: clamp(2.05rem, 15cqi, 2.55rem);
   }
 
   .eyebrow {
@@ -323,18 +368,19 @@
 
 @media (max-width: 320px) {
   :root {
-    --gutter: 0.75rem;
+    --gutter: 0.8rem;
   }
 
   .hero-title {
-    font-size: min(2.1rem, calc((100vw - (2 * var(--gutter))) / 7.35));
+    font-size: clamp(1.95rem, 10vw, 2.4rem);
+    font-size: clamp(1.95rem, 14.6cqi, 2.4rem);
   }
 
   .page-title,
   .tech-title,
   .next-block h2,
   .cta-finale h2 {
-    font-size: clamp(1.55rem, 8.4vw, 2.2rem);
+    font-size: clamp(1.5rem, 8.2vw, 2.15rem);
   }
 }
 

@@ -8,7 +8,7 @@ import {
   initPageTransitions,
   initHeroVisual,
   initAnimations
-} from "./animations.js";
+} from "./animations.js?v=5";
 
 function renderHomeServices() {
   const root = document.querySelector("[data-services-preview]");
