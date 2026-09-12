@@ -1,90 +1,49 @@
-import { t } from "./translations.js";
-
-const finePointer = () => window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-const reduced = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const fine = () => matchMedia("(hover: hover) and (pointer: fine)").matches;
+const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 export function initCursor() {
-  const dot = document.querySelector(".cursor-dot");
-  const ring = document.querySelector(".cursor-ring");
-  const label = document.querySelector(".cursor-label");
-  if (!dot || !ring || !label) return;
-
-  if (!finePointer() || reduced()) {
-    document.documentElement.classList.add("no-cursor");
-    document.documentElement.classList.remove("has-custom-cursor");
+  const d = document.querySelector(".cur-d");
+  const r = document.querySelector(".cur-r");
+  const l = document.querySelector(".cur-l");
+  if (!d || !r || !l) return;
+  if (!fine() || reduced() || innerWidth < 861) {
+    document.documentElement.classList.add("no-cur");
     return;
   }
-
-  document.documentElement.classList.add("has-custom-cursor");
-  document.documentElement.classList.remove("no-cursor");
-
-  const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-  const ringPos = { x: pos.x, y: pos.y };
-  let raf = 0;
-
+  document.documentElement.classList.add("has-cur");
+  const p = { x: innerWidth / 2, y: innerHeight / 2 };
+  const s = { x: p.x, y: p.y };
   const loop = () => {
-    ringPos.x += (pos.x - ringPos.x) * 0.18;
-    ringPos.y += (pos.y - ringPos.y) * 0.18;
-    dot.style.transform = `translate3d(${pos.x}px, ${pos.y}px, 0)`;
-    ring.style.transform = `translate3d(${ringPos.x}px, ${ringPos.y}px, 0)`;
-    label.style.transform = `translate3d(${ringPos.x}px, ${ringPos.y + 28}px, 0)`;
-    raf = requestAnimationFrame(loop);
+    s.x += (p.x - s.x) * 0.18;
+    s.y += (p.y - s.y) * 0.18;
+    d.style.transform = `translate3d(${p.x}px,${p.y}px,0)`;
+    r.style.transform = `translate3d(${s.x}px,${s.y}px,0)`;
+    l.style.transform = `translate3d(${s.x}px,${s.y + 26}px,0)`;
+    requestAnimationFrame(loop);
   };
-  raf = requestAnimationFrame(loop);
-
-  window.addEventListener(
-    "pointermove",
-    (event) => {
-      pos.x = event.clientX;
-      pos.y = event.clientY;
-    },
-    { passive: true }
-  );
-
-  const setState = (el, active) => {
-    const key = el?.dataset.cursor;
-    ring.classList.toggle("is-hover", Boolean(active && key));
-    if (active && key) {
-      label.textContent = t(`cursor.${key}`, key);
-      label.style.opacity = "1";
-    } else {
-      label.style.opacity = "0";
+  requestAnimationFrame(loop);
+  addEventListener("pointermove", (e) => { p.x = e.clientX; p.y = e.clientY; }, { passive: true });
+  document.addEventListener("pointerover", (e) => {
+    const t = e.target.closest("[data-cursor], a, button");
+    if (!t) return;
+    r.classList.add("on");
+    if (t.dataset.cursor) {
+      l.textContent = t.dataset.cursor;
+      l.style.opacity = "1";
     }
-  };
-
-  document.addEventListener("pointerover", (event) => {
-    const target = event.target.closest("[data-cursor], a, button");
-    if (!target) return;
-    if (!target.dataset.cursor) {
-      if (target.matches("a, button")) ring.classList.add("is-hover");
-      return;
-    }
-    setState(target, true);
   });
-
-  document.addEventListener("pointerout", (event) => {
-    const target = event.target.closest("[data-cursor], a, button");
-    if (!target) return;
-    setState(target, false);
-    ring.classList.remove("is-hover");
+  document.addEventListener("pointerout", (e) => {
+    if (!e.target.closest("[data-cursor], a, button")) return;
+    r.classList.remove("on");
+    l.style.opacity = "0";
   });
-
-  const magnets = () => document.querySelectorAll(".magnetic");
-  document.addEventListener("pointermove", (event) => {
-    magnets().forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-      const dx = event.clientX - cx;
-      const dy = event.clientY - cy;
-      const dist = Math.hypot(dx, dy);
-      if (dist < 120) {
-        el.style.transform = `translate(${dx * 0.18}px, ${dy * 0.18}px)`;
-      } else {
-        el.style.transform = "";
-      }
+  document.addEventListener("pointermove", (e) => {
+    document.querySelectorAll(".magnetic").forEach((el) => {
+      const b = el.getBoundingClientRect();
+      const dx = e.clientX - (b.left + b.width / 2);
+      const dy = e.clientY - (b.top + b.height / 2);
+      if (Math.hypot(dx, dy) < 110) el.style.transform = `translate(${dx * 0.16}px,${dy * 0.16}px)`;
+      else el.style.transform = "";
     });
   });
-
-  window.addEventListener("beforeunload", () => cancelAnimationFrame(raf));
 }

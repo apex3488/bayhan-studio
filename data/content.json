@@ -2,490 +2,219 @@
   "meta": {
     "home": {
       "title": {
-        "ru": "BAYHAN STUDIO — Цифровые решения для бизнеса",
-        "uz": "BAYHAN STUDIO — Biznes uchun raqamli yechimlar",
+        "ru": "BAYHAN STUDIO — Digital Solutions for Business",
+        "uz": "BAYHAN STUDIO — Digital Solutions for Business",
         "en": "BAYHAN STUDIO — Digital Solutions for Business"
       },
       "description": {
-        "ru": "BAYHAN STUDIO создаёт сайты, Telegram-ботов, автоматизацию, CRM, системы заявок и AI-ассистентов для современного бизнеса.",
-        "uz": "BAYHAN STUDIO zamonaviy biznes uchun veb-saytlar, Telegram botlar, avtomatlashtirish, CRM, arizalar tizimi va AI yordamchilarini yaratadi.",
-        "en": "BAYHAN STUDIO creates websites, Telegram bots, automation, CRM, application systems and AI assistants for modern businesses."
+        "ru": "BAYHAN STUDIO создаёт сайты, цифровые продукты, автоматизацию, Telegram-ботов и AI-системы для бизнеса.",
+        "uz": "BAYHAN STUDIO biznes uchun saytlar, raqamli mahsulotlar, avtomatlashtirish, Telegram botlar va AI tizimlarini yaratadi.",
+        "en": "BAYHAN STUDIO builds websites, digital products, automation, Telegram bots and AI systems for business."
       }
     },
     "services": {
-      "title": {
-        "ru": "Услуги — BAYHAN STUDIO",
-        "uz": "Xizmatlar — BAYHAN STUDIO",
-        "en": "Services — BAYHAN STUDIO"
-      },
+      "title": { "ru": "Услуги — BAYHAN STUDIO", "uz": "Xizmatlar — BAYHAN STUDIO", "en": "Services — BAYHAN STUDIO" },
       "description": {
-        "ru": "Сайты, Telegram-боты, бизнес-автоматизация, CRM, системы управления заявками и AI-ассистенты.",
-        "uz": "Veb-saytlar, Telegram botlar, biznes avtomatlashtirish, CRM, arizalarni boshqarish tizimlari va AI yordamchilari.",
-        "en": "Websites, Telegram bots, business automation, CRM, application management systems and AI assistants."
+        "ru": "Веб, AI, Telegram-боты, автоматизация, CRM и цифровые продукты.",
+        "uz": "Veb, AI, Telegram botlar, avtomatlashtirish, CRM va raqamli mahsulotlar.",
+        "en": "Web, AI, Telegram bots, automation, CRM and digital products."
       }
     },
     "about": {
-      "title": {
-        "ru": "О студии — BAYHAN STUDIO",
-        "uz": "Studiya haqida — BAYHAN STUDIO",
-        "en": "About — BAYHAN STUDIO"
-      },
+      "title": { "ru": "Студия — BAYHAN STUDIO", "uz": "Studiya — BAYHAN STUDIO", "en": "About — BAYHAN STUDIO" },
       "description": {
-        "ru": "BAYHAN STUDIO создаёт цифровые решения для компаний, которые хотят двигаться вперёд.",
-        "uz": "BAYHAN STUDIO oldinga intiladigan kompaniyalar uchun raqamli yechimlar yaratadi.",
+        "ru": "BAYHAN STUDIO создаёт цифровые решения для бизнеса, который хочет двигаться вперёд.",
+        "uz": "BAYHAN STUDIO oldinga intiladigan biznes uchun raqamli yechimlar yaratadi.",
         "en": "BAYHAN STUDIO creates digital solutions for businesses that want to move forward."
       }
     },
     "contact": {
-      "title": {
-        "ru": "Контакты — BAYHAN STUDIO",
-        "uz": "Aloqa — BAYHAN STUDIO",
-        "en": "Contact — BAYHAN STUDIO"
-      },
+      "title": { "ru": "Контакты — BAYHAN STUDIO", "uz": "Aloqa — BAYHAN STUDIO", "en": "Contact — BAYHAN STUDIO" },
       "description": {
-        "ru": "Свяжитесь с BAYHAN STUDIO в Telegram, по телефону или в Instagram, чтобы обсудить проект.",
-        "uz": "Loyihani muhokama qilish uchun BAYHAN STUDIO bilan Telegram, telefon yoki Instagram orqali bog‘laning.",
-        "en": "Reach BAYHAN STUDIO on Telegram, phone or Instagram to discuss a project."
+        "ru": "Связь с BAYHAN STUDIO в Telegram, по телефону или в Instagram.",
+        "uz": "BAYHAN STUDIO bilan Telegram, telefon yoki Instagram orqali bog‘laning.",
+        "en": "Reach BAYHAN STUDIO on Telegram, phone or Instagram."
       }
     },
     "notFound": {
-      "title": {
-        "ru": "404 — Страница не найдена | BAYHAN STUDIO",
-        "uz": "404 — Sahifa topilmadi | BAYHAN STUDIO",
-        "en": "404 — Not Found | BAYHAN STUDIO"
-      },
+      "title": { "ru": "404 — BAYHAN STUDIO", "uz": "404 — BAYHAN STUDIO", "en": "404 — BAYHAN STUDIO" },
       "description": {
-        "ru": "Эта страница не существует. Вернитесь на главную BAYHAN STUDIO.",
-        "uz": "Bu sahifa mavjud emas. BAYHAN STUDIO bosh sahifasiga qayting.",
-        "en": "This page does not exist. Return to the BAYHAN STUDIO homepage."
+        "ru": "Страница не найдена.",
+        "uz": "Sahifa topilmadi.",
+        "en": "Page not found."
       }
     }
   },
   "nav": {
-    "home": { "ru": "Главная", "uz": "Bosh sahifa", "en": "Home" },
-    "services": { "ru": "Услуги", "uz": "Xizmatlar", "en": "Services" },
-    "about": { "ru": "Студия", "uz": "Studiya", "en": "About" },
-    "contact": { "ru": "Контакты", "uz": "Aloqa", "en": "Contact" },
-    "cta": { "ru": "Начать проект", "uz": "Loyihani boshlash", "en": "Start a project" },
-    "openMenu": { "ru": "Открыть меню", "uz": "Menyuni ochish", "en": "Open menu" },
-    "closeMenu": { "ru": "Закрыть меню", "uz": "Menyuni yopish", "en": "Close menu" },
-    "skip": { "ru": "К содержимому", "uz": "Tarkibga o‘tish", "en": "Skip to content" }
-  },
-  "preloader": {
-    "label": { "ru": "Загрузка", "uz": "Yuklanmoqda", "en": "Loading" }
+    "services": { "ru": "Services", "uz": "Services", "en": "Services" },
+    "about": { "ru": "About", "uz": "About", "en": "About" },
+    "contact": { "ru": "Contact", "uz": "Contact", "en": "Contact" },
+    "cta": { "ru": "Start a project", "uz": "Start a project", "en": "Start a project" },
+    "open": { "ru": "Open menu", "uz": "Menyuni ochish", "en": "Open menu" },
+    "close": { "ru": "Close menu", "uz": "Menyuni yopish", "en": "Close menu" },
+    "skip": { "ru": "К содержимому", "uz": "Tarkibga", "en": "Skip to content" }
   },
   "hero": {
-    "eyebrow": { "ru": "Digital Agency / Technology Studio", "uz": "Digital Agency / Technology Studio", "en": "Digital Agency / Technology Studio" },
+    "status": { "ru": "Digital product studio", "uz": "Digital product studio", "en": "Digital product studio" },
+    "place": { "ru": "Tashkent → Worldwide", "uz": "Tashkent → Worldwide", "en": "Tashkent → Worldwide" },
     "line1": { "ru": "BAYHAN", "uz": "BAYHAN", "en": "BAYHAN" },
     "line2": { "ru": "STUDIO", "uz": "STUDIO", "en": "STUDIO" },
-    "slogan1": { "ru": "Цифровые решения", "uz": "Raqamli yechimlar", "en": "Digital solutions" },
-    "slogan2": { "ru": "для бизнеса.", "uz": "biznes uchun.", "en": "for business." },
     "text": {
-      "ru": "Мы проектируем цифровые продукты, автоматизируем бизнес-процессы и создаём интеллектуальные решения для современных компаний.",
-      "uz": "Biz raqamli mahsulotlarni loyihalaymiz, biznes jarayonlarini avtomatlashtiramiz va zamonaviy kompaniyalar uchun intellektual yechimlar yaratamiz.",
-      "en": "We design digital products, automate business processes and build intelligent solutions for modern companies."
+      "ru": "We build digital experiences, products and intelligent systems for what comes next.",
+      "uz": "We build digital experiences, products and intelligent systems for what comes next.",
+      "en": "We build digital experiences, products and intelligent systems for what comes next."
     },
-    "cta": { "ru": "Начать проект", "uz": "Loyihani boshlash", "en": "Start a project" },
-    "explore": { "ru": "Смотреть услуги", "uz": "Xizmatlarni ko‘rish", "en": "Explore services" },
-    "scroll": { "ru": "Листать", "uz": "Pastga", "en": "Scroll" }
+    "cta": { "ru": "Start a project", "uz": "Start a project", "en": "Start a project" },
+    "scroll": { "ru": "Scroll", "uz": "Scroll", "en": "Scroll" }
   },
-  "intro": {
-    "line1": { "ru": "Digital", "uz": "Digital", "en": "Digital" },
-    "line2": { "ru": "is the new", "uz": "is the new", "en": "is the new" },
-    "line3": { "ru": "infrastructure.", "uz": "infrastructure.", "en": "infrastructure." },
-    "text": {
-      "ru": "Современному бизнесу нужен не просто красивый сайт. Нужна цифровая инфраструктура, которая помогает работать точнее, быстрее и последовательнее — от первого касания с клиентом до внутренних процессов.",
-      "uz": "Zamonaviy biznesga shunchaki chiroyli sayt kerak emas. Kerak bo‘lgan narsa — mijoz bilan birinchi aloqadan ichki jarayonlargacha aniqroq, tezroq va izchil ishlashga yordam beradigan raqamli infratuzilma.",
-      "en": "Modern business needs more than a beautiful website. It needs digital infrastructure that helps it work with more precision — from the first client touchpoint to internal operations."
-    }
-  },
-  "servicesPreview": {
-    "label": { "ru": "Услуги", "uz": "Xizmatlar", "en": "Services" },
-    "title": { "ru": "What we build", "uz": "What we build", "en": "What we build" },
-    "more": { "ru": "Подробнее", "uz": "Batafsil", "en": "Learn more" }
+  "manifesto": {
+    "a1": { "ru": "We don't", "uz": "We don't", "en": "We don't" },
+    "a2": { "ru": "just build", "uz": "just build", "en": "just build" },
+    "a3": { "ru": "websites.", "uz": "websites.", "en": "websites." },
+    "b1": { "ru": "We build", "uz": "We build", "en": "We build" },
+    "b2": { "ru": "digital", "uz": "digital", "en": "digital" },
+    "b3": { "ru": "products.", "uz": "products.", "en": "products." }
   },
   "services": {
-    "pageLabel": { "ru": "Услуги", "uz": "Xizmatlar", "en": "Services" },
-    "pageTitle": {
-      "ru": "Цифровые системы,\nкоторые работают\nна бизнес.",
-      "uz": "Biznes uchun ishlaydigan\nraqamli tizimlar.",
-      "en": "Digital systems\nbuilt for business."
-    },
-    "pageLead": {
-      "ru": "Каждое направление — это услуга студии. Мы проектируем решения под конкретную задачу, а не универсальные шаблоны.",
-      "uz": "Har bir yo‘nalish — studiyaning xizmati. Biz universal shablonlar emas, aniq vazifa uchun yechimlar loyihalaymiz.",
-      "en": "Each direction is a studio service. We design solutions around a specific problem, not generic templates."
-    },
+    "label": { "ru": "Capabilities", "uz": "Capabilities", "en": "Capabilities" },
+    "title": { "ru": "What we build", "uz": "What we build", "en": "What we build" },
     "items": [
       {
-        "id": "websites",
-        "number": "01",
-        "title": { "ru": "Websites", "uz": "Websites", "en": "Websites" },
-        "short": {
-          "ru": "Современные сайты с высокой скоростью, точной структурой и сильным визуальным языком.",
-          "uz": "Yuqori tezlik, aniq tuzilma va kuchli vizual tilga ega zamonaviy veb-saytlar.",
-          "en": "Modern, responsive and high-performance websites designed around your business."
-        },
-        "long": {
-          "ru": "Мы создаём современные, адаптивные и производительные сайты, выстроенные вокруг задач бизнеса: от первого экрана до логики конверсии.",
-          "uz": "Biz biznes vazifalari atrofida qurilgan zamonaviy, moslashuvchan va yuqori unumli veb-saytlar yaratamiz.",
-          "en": "We create modern, responsive and high-performance websites designed around your business."
-        },
-        "subs": {
-          "ru": ["Корпоративные сайты", "Лендинги", "E-commerce", "Кастомные веб-платформы"],
-          "uz": ["Korporativ saytlar", "Landing sahifalar", "E-commerce", "Maxsus veb-platformalar"],
-          "en": ["Corporate websites", "Landing pages", "E-commerce", "Custom web platforms"]
-        }
-      },
-      {
-        "id": "bots",
-        "number": "02",
-        "title": { "ru": "Telegram Bots", "uz": "Telegram Bots", "en": "Telegram Bots" },
-        "short": {
-          "ru": "Боты, которые упрощают продажи, запись, поддержку и ежедневную коммуникацию.",
-          "uz": "Sotuv, band qilish, qo‘llab-quvvatlash va kundalik muloqotni soddalashtiradigan botlar.",
-          "en": "Telegram bots that simplify communication, sales and everyday business processes."
-        },
-        "long": {
-          "ru": "Мы разрабатываем Telegram-ботов, которые упрощают коммуникацию, продажи и повседневные процессы бизнеса.",
-          "uz": "Biz muloqot, savdo va kundalik biznes jarayonlarini soddalashtiradigan Telegram botlar yaratamiz.",
-          "en": "We build Telegram bots that simplify communication, sales and everyday business processes."
-        },
-        "subs": {
-          "ru": ["Заказы", "Запись", "Продажи", "Поддержка", "Уведомления", "Взаимодействие с клиентами"],
-          "uz": ["Buyurtmalar", "Band qilish", "Savdo", "Qo‘llab-quvvatlash", "Bildirishnomalar", "Mijozlar bilan aloqa"],
-          "en": ["Ordering", "Booking", "Sales", "Support", "Notifications", "Customer interaction"]
-        }
-      },
-      {
-        "id": "automation",
-        "number": "03",
-        "title": { "ru": "Business Automation", "uz": "Business Automation", "en": "Business Automation" },
-        "short": {
-          "ru": "Повторяющиеся процессы становятся связанным цифровым потоком без ручной рутины.",
-          "uz": "Takroriy jarayonlar qo‘lda bajariladigan rutinadan xoli bog‘langan raqamli oqimga aylanadi.",
-          "en": "We automate repetitive processes and connect operations into efficient digital workflows."
-        },
-        "long": {
-          "ru": "Мы автоматизируем повторяющиеся процессы и связываем операции бизнеса в эффективные цифровые сценарии.",
-          "uz": "Biz takroriy jarayonlarni avtomatlashtiramiz va biznes operatsiyalarini samarali raqamli oqimlarga bog‘laymiz.",
-          "en": "We automate repetitive processes and connect business operations into efficient digital workflows."
-        },
-        "subs": {
-          "ru": ["Сценарии", "Уведомления", "Обработка лидов", "Интеграции", "Внутренние процессы"],
-          "uz": ["Ish oqimlari", "Bildirishnomalar", "Lidlar bilan ishlash", "Integratsiyalar", "Ichki jarayonlar"],
-          "en": ["Workflows", "Notifications", "Lead processing", "Integrations", "Internal processes"]
-        }
-      },
-      {
-        "id": "crm",
-        "number": "04",
-        "title": { "ru": "CRM Systems", "uz": "CRM Systems", "en": "CRM Systems" },
-        "short": {
-          "ru": "Кастомные CRM под реальный рабочий процесс компании — не универсальный конструктор.",
-          "uz": "Kompaniyaning haqiqiy ish jarayoniga mos maxsus CRM — universal konstruktor emas.",
-          "en": "Custom CRM systems designed around the specific workflow of each business."
-        },
-        "long": {
-          "ru": "Мы создаём кастомные CRM-системы, выстроенные вокруг реального рабочего процесса конкретной компании.",
-          "uz": "Biz har bir biznesning aniq ish jarayoniga moslashtirilgan maxsus CRM tizimlarini yaratamiz.",
-          "en": "We build custom CRM systems designed around the specific workflow of each business."
-        },
-        "subs": {
-          "ru": ["Клиенты", "Лиды", "Продажи", "Задачи", "Аналитика", "Кастомные процессы"],
-          "uz": ["Mijozlar", "Lidlar", "Savdo", "Vazifalar", "Tahlil", "Maxsus jarayonlar"],
-          "en": ["Clients", "Leads", "Sales", "Tasks", "Analytics", "Custom workflows"]
-        }
-      },
-      {
-        "id": "applications",
-        "number": "05",
-        "title": { "ru": "Application Management", "uz": "Application Management", "en": "Application Management" },
-        "short": {
-          "ru": "Системы приёма, маршрутизации и обработки заявок с понятными статусами и ответственными.",
-          "uz": "Aniq statuslar va mas’ullar bilan arizalarni qabul qilish, yo‘naltirish va qayta ishlash tizimlari.",
-          "en": "Systems that help businesses receive, organize and process customer applications."
-        },
-        "long": {
-          "ru": "Мы создаём системы, которые помогают бизнесу принимать, организовывать и обрабатывать заявки клиентов.",
-          "uz": "Biz biznesga mijoz arizalarini qabul qilish, tartibga solish va qayta ishlashda yordam beradigan tizimlar yaratamiz.",
-          "en": "We create systems that help businesses receive, organize and process customer applications."
-        },
-        "subs": {
-          "ru": ["Заявки", "Статусы", "Менеджеры", "Уведомления", "Аналитика", "Процессы"],
-          "uz": ["Arizalar", "Statuslar", "Menejerlar", "Bildirishnomalar", "Tahlil", "Jarayonlar"],
-          "en": ["Applications", "Statuses", "Managers", "Notifications", "Analytics", "Workflows"]
+        "id": "web",
+        "num": "01",
+        "title": { "ru": "Web development", "uz": "Web development", "en": "Web development" },
+        "text": {
+          "ru": "Современные сайты и платформы: корпоративные, лендинги, e-commerce и кастомные веб-системы.",
+          "uz": "Zamonaviy saytlar va platformalar: korporativ, landing, e-commerce va maxsus veb-tizimlar.",
+          "en": "Modern websites and platforms — corporate, landing, e-commerce and custom web systems."
         }
       },
       {
         "id": "ai",
-        "number": "06",
-        "title": { "ru": "AI Assistants", "uz": "AI Assistants", "en": "AI Assistants" },
-        "short": {
-          "ru": "ИИ-ассистенты для коммуникации, обработки информации и внутренних сценариев компании.",
-          "uz": "Muloqot, ma’lumotlarni qayta ishlash va ichki jarayonlar uchun AI yordamchilari.",
-          "en": "AI assistants that help businesses automate communication, information processing and internal workflows."
-        },
-        "long": {
-          "ru": "Мы создаём AI-ассистентов, которые помогают автоматизировать коммуникацию, обработку информации и внутренние процессы.",
-          "uz": "Biz muloqot, ma’lumotlarni qayta ishlash va ichki jarayonlarni avtomatlashtirishga yordam beradigan AI yordamchilarini yaratamiz.",
-          "en": "We create AI assistants that help businesses automate communication, information processing and internal workflows."
-        },
-        "subs": {
-          "ru": ["Поддержка клиентов", "Внутренние ассистенты", "Информационные системы", "AI-автоматизация", "Интеллектуальные сценарии"],
-          "uz": ["Mijozlarni qo‘llab-quvvatlash", "Ichki yordamchilar", "Axborot tizimlari", "AI avtomatlashtirish", "Intellektual jarayonlar"],
-          "en": ["Customer support", "Internal assistants", "Information systems", "AI automation", "Intelligent workflows"]
+        "num": "02",
+        "title": { "ru": "AI systems", "uz": "AI systems", "en": "AI systems" },
+        "text": {
+          "ru": "AI-ассистенты и интеллектуальные сценарии для поддержки, внутренних процессов и обработки информации.",
+          "uz": "Qo‘llab-quvvatlash, ichki jarayonlar va ma’lumotlarni qayta ishlash uchun AI yordamchilar.",
+          "en": "AI assistants and intelligent workflows for support, internal operations and information processing."
+        }
+      },
+      {
+        "id": "bots",
+        "num": "03",
+        "title": { "ru": "Telegram bots", "uz": "Telegram bots", "en": "Telegram bots" },
+        "text": {
+          "ru": "Боты для заказов, записи, продаж, поддержки и уведомлений.",
+          "uz": "Buyurtma, band qilish, savdo, qo‘llab-quvvatlash va bildirishnomalar uchun botlar.",
+          "en": "Bots for ordering, booking, sales, support and notifications."
+        }
+      },
+      {
+        "id": "products",
+        "num": "04",
+        "title": { "ru": "Digital products", "uz": "Digital products", "en": "Digital products" },
+        "text": {
+          "ru": "Системы заявок, кастомные кабинеты и продукты вокруг реального процесса компании.",
+          "uz": "Arizalar tizimi, maxsus kabinetlar va kompaniya jarayoniga mos mahsulotlar.",
+          "en": "Application systems, custom platforms and products shaped around a real business process."
+        }
+      },
+      {
+        "id": "auto",
+        "num": "05",
+        "title": { "ru": "Automation", "uz": "Automation", "en": "Automation" },
+        "text": {
+          "ru": "Связываем операции в цифровые сценарии: лиды, уведомления, интеграции, внутренние процессы.",
+          "uz": "Operatsiyalarni raqamli oqimlarga bog‘laymiz: lidlar, bildirishnomalar, integratsiyalar.",
+          "en": "We connect operations into digital flows — leads, notifications, integrations, internal work."
+        }
+      },
+      {
+        "id": "crm",
+        "num": "06",
+        "title": { "ru": "UI/UX design", "uz": "UI/UX design", "en": "UI/UX design" },
+        "text": {
+          "ru": "Кастомные CRM и интерфейсы, выстроенные вокруг логики продаж, задач и аналитики.",
+          "uz": "Savdo, vazifalar va tahlil mantiqiga mos maxsus CRM va interfeyslar.",
+          "en": "Custom CRM and interfaces built around sales logic, tasks and analytics."
         }
       }
     ]
   },
   "about": {
-    "label": { "ru": "Студия", "uz": "Studiya", "en": "Studio" },
+    "label": { "ru": "Studio", "uz": "Studio", "en": "Studio" },
     "title": {
-      "ru": "Цифровые решения\nдля тех, кто хочет\nдвигаться вперёд.",
-      "uz": "Oldinga intiladigan\nbiznes uchun raqamli\nyechimlar.",
-      "en": "Digital solutions\nfor businesses that\nwant to move forward."
+      "ru": "Digital experiences.\nIntelligent systems.\nModern products.",
+      "uz": "Digital experiences.\nIntelligent systems.\nModern products.",
+      "en": "Digital experiences.\nIntelligent systems.\nModern products."
     },
-    "lead": {
+    "text": {
       "ru": "BAYHAN STUDIO создаёт цифровые решения для бизнеса, которому важно не только выглядеть современно, но и работать точнее.",
       "uz": "BAYHAN STUDIO nafaqat zamonaviy ko‘rinish, balki aniqroq ishlash muhim bo‘lgan biznes uchun raqamli yechimlar yaratadi.",
-      "en": "BAYHAN STUDIO creates digital solutions for businesses that want to move forward."
-    },
-    "blocks": [
-      {
-        "id": "philosophy",
-        "title": { "ru": "Philosophy", "uz": "Philosophy", "en": "Philosophy" },
-        "text": {
-          "ru": "Технология имеет смысл, когда она усиливает бизнес. Мы начинаем с задачи, а не с визуального эффекта, и собираем системы, которые остаются понятными после запуска.",
-          "uz": "Texnologiya biznesni kuchaytirganda ma’no kasb etadi. Biz vizual effekt emas, vazifadan boshlaymiz va ishga tushgandan keyin ham tushunarli qoladigan tizimlarni yig‘amiz.",
-          "en": "Technology matters when it strengthens the business. We start from the problem, not the visual effect, and assemble systems that stay clear after launch."
-        }
-      },
-      {
-        "id": "approach",
-        "title": { "ru": "Approach", "uz": "Approach", "en": "Approach" },
-        "text": {
-          "ru": "Сначала — понимание процесса. Затем структура, интерфейс и логика. Каждое решение проектируется так, чтобы им могли пользоваться люди, а не только команда разработки.",
-          "uz": "Avval jarayonni tushunish. Keyin tuzilma, interfeys va mantiq. Har bir yechim faqat dasturlash jamoasi uchun emas, odamlar foydalana oladigan qilib loyihalanadi.",
-          "en": "First, understand the process. Then structure, interface and logic. Every solution is designed so people can use it — not only the development team."
-        }
-      },
-      {
-        "id": "design",
-        "title": { "ru": "Design", "uz": "Design", "en": "Design" },
-        "text": {
-          "ru": "Дизайн для нас — это точность, иерархия и характер. Интерфейс должен быть спокойным, технологичным и достаточно смелым, чтобы бренд запоминался.",
-          "uz": "Biz uchun dizayn — aniqlik, ierarxiya va xarakter. Interfeys tinch, texnologik va brend esda qoladigan darajada dadil bo‘lishi kerak.",
-          "en": "For us, design is precision, hierarchy and character. The interface should feel calm, technological and distinctive enough for the brand to be remembered."
-        }
-      },
-      {
-        "id": "technology",
-        "title": { "ru": "Technology", "uz": "Technology", "en": "Technology" },
-        "text": {
-          "ru": "Мы выбираем технологии под задачу: веб, автоматизация, CRM, Telegram и интеллектуальные системы. Инструмент вторичен. Результат в работе бизнеса — первичен.",
-          "uz": "Biz texnologiyani vazifaga qarab tanlaymiz: veb, avtomatlashtirish, CRM, Telegram va intellektual tizimlar. Vosita ikkinchi o‘rinda. Biznesdagi natija — birinchi.",
-          "en": "We choose technology around the task: web, automation, CRM, Telegram and intelligent systems. The tool is secondary. The effect on the business comes first."
-        }
-      },
-      {
-        "id": "business",
-        "title": { "ru": "Business thinking", "uz": "Business thinking", "en": "Business thinking" },
-        "text": {
-          "ru": "Каждый продукт должен закрывать конкретную операционную потребность: привлечение, обработка, сопровождение или масштабирование. Красота без пользы — незавершённая работа.",
-          "uz": "Har bir mahsulot aniq operatsion ehtiyojni yopishi kerak: jalb qilish, qayta ishlash, kuzatish yoki kengaytirish. Foydasiz go‘zallik — tugallanmagan ish.",
-          "en": "Every product should close a concrete operational need: acquisition, processing, support or scale. Beauty without utility is unfinished work."
-        }
-      }
-    ]
-  },
-  "why": {
-    "label": { "ru": "Почему мы", "uz": "Nima uchun", "en": "Why" },
-    "title": { "ru": "Why BAYHAN", "uz": "Why BAYHAN", "en": "Why BAYHAN" },
-    "items": [
-      {
-        "title": { "ru": "Custom solutions", "uz": "Custom solutions", "en": "Custom solutions" },
-        "text": {
-          "ru": "Решение собирается под ваш процесс, а не наоборот.",
-          "uz": "Yechim sizning jarayoningizga moslab yig‘iladi, aksincha emas.",
-          "en": "The system is shaped around your process — not the other way around."
-        }
-      },
-      {
-        "title": { "ru": "Modern technology", "uz": "Modern technology", "en": "Modern technology" },
-        "text": {
-          "ru": "Современный стек там, где он даёт скорость, надёжность и развитие.",
-          "uz": "Zamonaviy texnologiya tezlik, ishonchlilik va rivojlanish beradigan joyda qo‘llaniladi.",
-          "en": "Modern technology where it actually creates speed, reliability and room to grow."
-        }
-      },
-      {
-        "title": { "ru": "Business-first approach", "uz": "Business-first approach", "en": "Business-first approach" },
-        "text": {
-          "ru": "Сначала ценность для бизнеса, затем визуал и архитектура.",
-          "uz": "Avval biznes uchun qiymat, keyin vizual va arxitektura.",
-          "en": "Business value first, then visuals and architecture."
-        }
-      },
-      {
-        "title": { "ru": "Attention to detail", "uz": "Attention to detail", "en": "Attention to detail" },
-        "text": {
-          "ru": "Интерфейс, логика и микросценарии прорабатываются как единое целое.",
-          "uz": "Interfeys, mantiq va mikrojarayonlar yagona butun sifatida ishlab chiqiladi.",
-          "en": "Interface, logic and micro-flows are crafted as one system."
-        }
-      },
-      {
-        "title": { "ru": "Scalable systems", "uz": "Scalable systems", "en": "Scalable systems" },
-        "text": {
-          "ru": "Архитектура закладывается так, чтобы систему можно было развивать.",
-          "uz": "Arxitektura tizimni keyin rivojlantirish mumkin bo‘ladigan qilib qo‘yiladi.",
-          "en": "Architecture is planned so the system can grow with the company."
-        }
-      },
-      {
-        "title": { "ru": "Long-term thinking", "uz": "Long-term thinking", "en": "Long-term thinking" },
-        "text": {
-          "ru": "Мы проектируем не разовую витрину, а основу для следующего шага.",
-          "uz": "Biz bir martalik vitrina emas, keyingi qadam uchun asos loyihalaymiz.",
-          "en": "We design a foundation for the next step, not a one-off showcase."
-        }
-      }
-    ]
-  },
-  "process": {
-    "label": { "ru": "Процесс", "uz": "Jarayon", "en": "Process" },
-    "title": { "ru": "How we work", "uz": "How we work", "en": "How we work" },
-    "steps": [
-      {
-        "number": "01",
-        "title": { "ru": "Discover", "uz": "Discover", "en": "Discover" },
-        "text": {
-          "ru": "Разбираем задачу, аудиторию и текущий процесс. Фиксируем, что система должна изменить.",
-          "uz": "Vazifa, auditoriya va joriy jarayonni tahlil qilamiz. Tizim nima o‘zgartirishi kerakligini aniqlaymiz.",
-          "en": "We study the task, audience and current process, then define what the system must change."
-        }
-      },
-      {
-        "number": "02",
-        "title": { "ru": "Plan", "uz": "Plan", "en": "Plan" },
-        "text": {
-          "ru": "Строим структуру решения: сценарии, приоритеты, этапы и границы первой версии.",
-          "uz": "Yechim tuzilmasini quramiz: ssenariylar, ustuvorliklar, bosqichlar va birinchi versiya chegarasi.",
-          "en": "We shape the structure: flows, priorities, stages and the boundaries of the first version."
-        }
-      },
-      {
-        "number": "03",
-        "title": { "ru": "Design", "uz": "Design", "en": "Design" },
-        "text": {
-          "ru": "Проектируем интерфейс и визуальный язык, в котором логика читается без лишнего шума.",
-          "uz": "Mantiq ortiqcha shovqinsiz o‘qiladigan interfeys va vizual tilni loyihalaymiz.",
-          "en": "We design an interface and visual language where the logic stays readable."
-        }
-      },
-      {
-        "number": "04",
-        "title": { "ru": "Build", "uz": "Build", "en": "Build" },
-        "text": {
-          "ru": "Собираем продукт: фронтенд, логика, интеграции и внимание к деталям поведения.",
-          "uz": "Mahsulotni yig‘amiz: frontend, mantiq, integratsiyalar va xatti-harakat detallari.",
-          "en": "We build the product: interface, logic, integrations and careful interaction details."
-        }
-      },
-      {
-        "number": "05",
-        "title": { "ru": "Launch", "uz": "Launch", "en": "Launch" },
-        "text": {
-          "ru": "Готовим запуск, проверяем сценарии и передаём систему в рабочий контур.",
-          "uz": "Ishga tushirishga tayyorlaymiz, ssenariylarni tekshiramiz va tizimni ish jarayoniga topshiramiz.",
-          "en": "We prepare the launch, verify the flows and hand the system into real use."
-        }
-      },
-      {
-        "number": "06",
-        "title": { "ru": "Scale", "uz": "Scale", "en": "Scale" },
-        "text": {
-          "ru": "После запуска развиваем продукт: новые сценарии, автоматизация, рост нагрузки.",
-          "uz": "Ishga tushgandan keyin mahsulotni rivojlantiramiz: yangi ssenariylar, avtomatlashtirish, yuk o‘sishi.",
-          "en": "After launch we evolve the product: new flows, deeper automation, growing load."
-        }
-      }
-    ]
-  },
-  "tech": {
-    "line1": { "ru": "Built for", "uz": "Built for", "en": "Built for" },
-    "line2": { "ru": "the next step.", "uz": "the next step.", "en": "the next step." },
-    "items": ["WEB", "AI", "AUTOMATION", "CRM", "TELEGRAM", "DIGITAL SYSTEMS"]
-  },
-  "next": {
-    "line1": { "ru": "Your project", "uz": "Your project", "en": "Your project" },
-    "line2": { "ru": "could be next.", "uz": "could be next.", "en": "could be next." },
-    "text": {
-      "ru": "Если вы строите цифровую инфраструктуру компании — начнём с разговора в Telegram.",
-      "uz": "Agar kompaniyangiz raqamli infratuzilmasini quryotgan bo‘lsangiz — Telegramda suhbatdan boshlaymiz.",
-      "en": "If you are building digital infrastructure for your company, start with a conversation on Telegram."
+      "en": "BAYHAN STUDIO creates digital solutions for businesses that want to look contemporary — and operate with more precision."
     }
   },
-  "ctaBlock": {
-    "line1": { "ru": "Ready to", "uz": "Ready to", "en": "Ready to" },
-    "line2": { "ru": "build something", "uz": "build something", "en": "build something" },
-    "line3": { "ru": "great?", "uz": "great?", "en": "great?" },
-    "start": { "ru": "Начать проект", "uz": "Loyihani boshlash", "en": "Start a project" },
-    "order": { "ru": "Заказать сайт", "uz": "Sayt buyurtma qilish", "en": "Order a website" },
-    "request": { "ru": "Оставить заявку", "uz": "Ariza qoldirish", "en": "Leave a request" },
-    "discuss": { "ru": "Обсудить проект", "uz": "Loyihani muhokama qilish", "en": "Discuss a project" }
+  "stats": [
+    { "k": "Web", "v": { "ru": "Сайты и платформы", "uz": "Saytlar va platformalar", "en": "Sites and platforms" } },
+    { "k": "AI", "v": { "ru": "Боты и интеллект", "uz": "Botlar va intellekt", "en": "Bots and intelligence" } },
+    { "k": "Ops", "v": { "ru": "Автоматизация", "uz": "Avtomatlashtirish", "en": "Automation" } },
+    { "k": "UX", "v": { "ru": "Интерфейсы и CRM", "uz": "Interfeys va CRM", "en": "Interfaces and CRM" } }
+  ],
+  "ai": {
+    "a": { "ru": "Intelligence", "uz": "Intelligence", "en": "Intelligence" },
+    "b": { "ru": "meets", "uz": "meets", "en": "meets" },
+    "c": { "ru": "design.", "uz": "design.", "en": "design." },
+    "text": {
+      "ru": "Интеллект в продукте — не декоративный слой. Он встраивается в коммуникацию, процессы и интерфейс.",
+      "uz": "Mahsulotdagi intellekt — bezak emas. U muloqot, jarayon va interfeysga joylashadi.",
+      "en": "Intelligence in a product is not decoration. It is built into communication, process and interface."
+    }
+  },
+  "process": {
+    "label": { "ru": "Method", "uz": "Method", "en": "Method" },
+    "title": { "ru": "How we work", "uz": "How we work", "en": "How we work" },
+    "steps": [
+      { "n": "01", "t": { "ru": "Discover", "uz": "Discover", "en": "Discover" }, "d": { "ru": "Задача, процесс, ограничения первой версии.", "uz": "Vazifa, jarayon, birinchi versiya chegarasi.", "en": "The problem, the process, the edge of version one." } },
+      { "n": "02", "t": { "ru": "Strategy", "uz": "Strategy", "en": "Strategy" }, "d": { "ru": "Структура, приоритеты, сценарии.", "uz": "Tuzilma, ustuvorliklar, ssenariylar.", "en": "Structure, priorities, flows." } },
+      { "n": "03", "t": { "ru": "Design", "uz": "Design", "en": "Design" }, "d": { "ru": "Интерфейс и визуальный язык, в котором читается логика.", "uz": "Mantiq o‘qiladigan interfeys va vizual til.", "en": "Interface and visual language where logic stays readable." } },
+      { "n": "04", "t": { "ru": "Build", "uz": "Build", "en": "Build" }, "d": { "ru": "Сборка: фронтенд, логика, интеграции.", "uz": "Yig‘ish: frontend, mantiq, integratsiyalar.", "en": "Assembly: interface, logic, integrations." } },
+      { "n": "05", "t": { "ru": "Launch", "uz": "Launch", "en": "Launch" }, "d": { "ru": "Запуск и развитие после выхода.", "uz": "Ishga tushirish va keyingi rivojlanish.", "en": "Launch, then evolve." } }
+    ]
+  },
+  "cta": {
+    "a": { "ru": "Let's build", "uz": "Let's build", "en": "Let's build" },
+    "b": { "ru": "what's next.", "uz": "what's next.", "en": "what's next." },
+    "btn": { "ru": "Start a project", "uz": "Start a project", "en": "Start a project" }
   },
   "contact": {
-    "label": { "ru": "Контакты", "uz": "Aloqa", "en": "Contact" },
+    "label": { "ru": "Contact", "uz": "Contact", "en": "Contact" },
     "title": {
-      "ru": "Давайте обсудим\nваш следующий шаг.",
-      "uz": "Keyingi qadamingizni\nmuhokama qilaylik.",
-      "en": "Let’s discuss\nyour next step."
+      "ru": "Как связаться.",
+      "uz": "Qanday bog‘lanamiz.",
+      "en": "How to reach us."
     },
     "lead": {
-      "ru": "Заявка уходит напрямую администратору BAYHAN STUDIO в Telegram. Формы на сайте нет — диалог начинается сразу.",
-      "uz": "Murojaat to‘g‘ridan-to‘g‘ri BAYHAN STUDIO administratoriga Telegram orqali boradi. Saytda forma yo‘q — suhbat darhol boshlanadi.",
-      "en": "Requests go directly to the BAYHAN STUDIO administrator on Telegram. There is no form on the site — the conversation starts immediately."
+      "ru": "Выберите удобный способ: написать в Telegram или позвонить.",
+      "uz": "Qulay usulni tanlang: Telegramda yozish yoki qo‘ng‘iroq.",
+      "en": "Choose what is easier: write on Telegram or call."
     },
-    "telegram": { "ru": "Telegram", "uz": "Telegram", "en": "Telegram" },
-    "telegramHint": {
-      "ru": "Основной канал связи",
-      "uz": "Asosiy aloqa kanali",
-      "en": "Primary contact channel"
-    },
-    "phone": { "ru": "Телефон", "uz": "Telefon", "en": "Phone" },
-    "instagram": { "ru": "Instagram", "uz": "Instagram", "en": "Instagram" }
+    "write": { "ru": "Написать", "uz": "Yozish", "en": "Write" },
+    "call": { "ru": "Позвонить", "uz": "Qo‘ng‘iroq", "en": "Call" }
   },
   "footer": {
-    "tagline": {
-      "ru": "Digital solutions for business.",
-      "uz": "Digital solutions for business.",
-      "en": "Digital solutions for business."
+    "tag": {
+      "ru": "Digital products. Built beyond expectations.",
+      "uz": "Digital products. Built beyond expectations.",
+      "en": "Digital products. Built beyond expectations."
     },
-    "explore": { "ru": "Навигация", "uz": "Navigatsiya", "en": "Explore" },
-    "connect": { "ru": "Связь", "uz": "Aloqa", "en": "Connect" },
-    "language": { "ru": "Язык", "uz": "Til", "en": "Language" },
-    "copyright": {
-      "ru": "BAYHAN STUDIO. Все права защищены.",
-      "uz": "BAYHAN STUDIO. Barcha huquqlar himoyalangan.",
+    "copy": {
+      "ru": "BAYHAN STUDIO. All rights reserved.",
+      "uz": "BAYHAN STUDIO. All rights reserved.",
       "en": "BAYHAN STUDIO. All rights reserved."
     }
   },
   "notFound": {
-    "code": { "ru": "404", "uz": "404", "en": "404" },
-    "title": { "ru": "Not found.", "uz": "Not found.", "en": "Not found." },
-    "text": {
-      "ru": "Страница не существует или была перемещена. Вернитесь на главную и продолжите знакомство со студией.",
-      "uz": "Sahifa mavjud emas yoki ko‘chirilgan. Bosh sahifaga qayting va studiya bilan tanishishni davom eting.",
-      "en": "This page does not exist or has been moved. Return home and continue exploring the studio."
-    },
-    "back": { "ru": "На главную", "uz": "Bosh sahifa", "en": "Back to home" }
-  },
-  "cursor": {
-    "view": { "ru": "View", "uz": "View", "en": "View" },
-    "open": { "ru": "Open", "uz": "Open", "en": "Open" },
-    "explore": { "ru": "Explore", "uz": "Explore", "en": "Explore" },
-    "go": { "ru": "Go", "uz": "Go", "en": "Go" }
+    "t": { "ru": "Lost signal.", "uz": "Lost signal.", "en": "Lost signal." },
+    "b": { "ru": "Back to home", "uz": "Back to home", "en": "Back to home" }
   }
 }

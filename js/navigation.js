@@ -1,185 +1,130 @@
 import { CONFIG } from "./config.js";
 import { t, setLanguage, applyTranslations } from "./translations.js";
 
-const pages = [
-  { id: "home", href: "./index.html" },
-  { id: "services", href: "./services.html" },
-  { id: "about", href: "./about.html" },
-  { id: "contact", href: "./contact.html" }
-];
-
-function currentPage() {
-  return document.body.dataset.page || "home";
-}
-
-function navMarkup() {
-  const page = currentPage();
-  const links = pages
-    .map((item) => {
-      const current = item.id === page ? ' aria-current="page"' : "";
-      return `<a href="${item.href}" data-i18n="nav.${item.id}" data-nav="${item.id}"${current}></a>`;
-    })
-    .join("");
-
-  return `
-    <div class="nav-inner">
-      <a class="logo" href="./index.html" data-cursor="go">
-        <img class="logo-mark" src="./assets/icons/favicon.svg" alt="" width="28" height="28">
-        <span>BAYHAN STUDIO</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">${links}</nav>
-      <div class="nav-end">
-        <div class="lang-switch" role="group" aria-label="Language">
-          <button type="button" data-lang="ru" aria-pressed="true">RU</button>
-          <button type="button" data-lang="uz" aria-pressed="false">UZ</button>
-          <button type="button" data-lang="en" aria-pressed="false">EN</button>
-        </div>
-        <a class="btn btn-primary nav-cta magnetic js-telegram" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer" data-cursor="open">
-          <span data-i18n="nav.cta"></span><span class="arrow">→</span>
-        </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n-attr="aria-label:nav.openMenu">
-          <span></span>
-        </button>
-      </div>
-    </div>
-  `;
-}
-
-function mobileMarkup() {
-  const page = currentPage();
-  const links = pages
-    .map((item, index) => {
-      const current = item.id === page ? ' aria-current="page"' : "";
-      return `<a href="${item.href}" data-i18n="nav.${item.id}" data-nav="${item.id}" data-delay="${index}"${current}></a>`;
-    })
-    .join("");
-
-  return `
-    ${links}
-    <a class="btn btn-primary js-telegram" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer">
-      <span data-i18n="nav.cta"></span><span class="arrow">→</span>
-    </a>
-    <div class="lang-switch" role="group" aria-label="Language">
-      <button type="button" data-lang="ru">RU</button>
-      <button type="button" data-lang="uz">UZ</button>
-      <button type="button" data-lang="en">EN</button>
-    </div>
-  `;
-}
-
-function footerMarkup() {
-  return `
-    <div class="container">
-      <p class="footer-brand">BAYHAN STUDIO</p>
-      <p class="muted" data-i18n="footer.tagline"></p>
-      <div class="footer-grid">
-        <div>
-          <h3 data-i18n="footer.explore"></h3>
-          ${pages.map((item) => `<a href="${item.href}" data-i18n="nav.${item.id}"></a>`).join("")}
-        </div>
-        <div>
-          <h3 data-i18n="footer.connect"></h3>
-          <a class="js-telegram" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer">Telegram</a>
-          <a class="js-phone" href="${CONFIG.phoneHref}">${CONFIG.phone}</a>
-          <a class="js-instagram" href="${CONFIG.instagram}" target="_blank" rel="noopener noreferrer">${CONFIG.instagramHandle}</a>
-        </div>
-        <div>
-          <h3 data-i18n="ctaBlock.start"></h3>
-          <a class="js-telegram" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer" data-i18n="ctaBlock.order"></a>
-          <a class="js-telegram" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer" data-i18n="ctaBlock.request"></a>
-          <a class="js-telegram" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer" data-i18n="ctaBlock.discuss"></a>
-        </div>
-        <div>
-          <h3 data-i18n="footer.language"></h3>
-          <div class="lang-switch" role="group" aria-label="Language">
-            <button type="button" data-lang="ru">RU</button>
-            <button type="button" data-lang="uz">UZ</button>
-            <button type="button" data-lang="en">EN</button>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span data-i18n="footer.copyright"></span>
-        <span>BAYHAN STUDIO</span>
-      </div>
-    </div>
-  `;
-}
-
-function bindLang(root) {
-  root.querySelectorAll("[data-lang]").forEach((btn) => {
-    btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
-  });
-}
-
-function bindTelegram(root) {
-  root.querySelectorAll(".js-telegram").forEach((el) => {
+export function bindContacts(root = document) {
+  root.querySelectorAll(".js-tg").forEach((el) => {
     el.setAttribute("href", CONFIG.telegram);
+    if (!el.querySelector("strong") && !el.children.length) el.textContent = CONFIG.telegramHandle;
   });
-  root.querySelectorAll(".js-phone").forEach((el) => {
-    el.setAttribute("href", CONFIG.phoneHref);
-  });
-  root.querySelectorAll(".js-instagram").forEach((el) => {
+  root.querySelectorAll(".js-ig").forEach((el) => {
     el.setAttribute("href", CONFIG.instagram);
+    if (!el.querySelector("strong") && !el.children.length) el.textContent = CONFIG.instagramHandle;
+  });
+  CONFIG.phones.forEach((p, i) => {
+    root.querySelectorAll(`.js-ph-${i}`).forEach((el) => {
+      el.setAttribute("href", p.href);
+      if (!el.children.length) el.textContent = p.display;
+    });
   });
 }
 
 export function mountChrome() {
-  const header = document.getElementById("site-header");
-  const mobile = document.getElementById("mobile-nav");
-  const footer = document.getElementById("site-footer");
-  if (header) header.innerHTML = navMarkup();
-  if (mobile) mobile.innerHTML = mobileMarkup();
-  if (footer) footer.innerHTML = footerMarkup();
+  const header = document.getElementById("nav");
+  const sheet = document.getElementById("sheet");
+  const foot = document.getElementById("foot");
+  const page = document.body.dataset.page || "home";
+  const links = [
+    { id: "services", href: "./services.html" },
+    { id: "about", href: "./about.html" },
+    { id: "contact", href: "./contact.html" }
+  ];
+  const navLinks = links
+    .map((l) => `<a href="${l.href}" data-i18n="nav.${l.id}"${page === l.id ? ' class="is-on"' : ""}></a>`)
+    .join("");
+  const phones = CONFIG.phones
+    .map((p, i) => `<a class="js-ph-${i}" href="${p.href}">${p.display}</a>`)
+    .join("");
 
-  bindLang(document);
-  bindTelegram(document);
+  if (header) {
+    header.innerHTML = `
+      <a class="brand" href="./index.html">BAYHAN</a>
+      <nav class="nav-links" aria-label="Primary">${navLinks}</nav>
+      <div class="nav-end">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="uz">UZ</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="btn nav-cta js-tg magnetic" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer" data-cursor="GO">
+          <span data-i18n="nav.cta"></span><span class="arr">→</span>
+        </a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="sheet" data-i18n-attr="aria-label:nav.open">
+          <span></span>
+        </button>
+      </div>`;
+  }
+
+  if (sheet) {
+    sheet.innerHTML = `${links.map((l) => `<a href="${l.href}" data-i18n="nav.${l.id}"></a>`).join("")}
+      <a class="btn js-tg" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.cta"></span><span class="arr">→</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="uz">UZ</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>`;
+  }
+
+  if (foot) {
+    foot.innerHTML = `
+      <div class="wrap">
+        <p class="foot-brand">BAYHAN STUDIO</p>
+        <p class="muted" data-i18n="footer.tag"></p>
+        <div class="foot-grid">
+          <div>
+            <h3>Explore</h3>
+            ${links.map((l) => `<a href="${l.href}" data-i18n="nav.${l.id}"></a>`).join("")}
+          </div>
+          <div>
+            <h3>Telegram</h3>
+            <a class="js-tg" href="${CONFIG.telegram}" target="_blank" rel="noopener noreferrer">${CONFIG.telegramHandle}</a>
+          </div>
+          <div>
+            <h3>Instagram</h3>
+            <a class="js-ig" href="${CONFIG.instagram}" target="_blank" rel="noopener noreferrer">${CONFIG.instagramHandle}</a>
+          </div>
+          <div>
+            <h3 data-i18n="contact.call"></h3>
+            ${phones}
+          </div>
+          <div>
+            <h3>Language</h3>
+            <div class="lang">
+              <button type="button" data-lang="ru">RU</button>
+              <button type="button" data-lang="uz">UZ</button>
+              <button type="button" data-lang="en">EN</button>
+            </div>
+          </div>
+        </div>
+        <div class="foot-bot">
+          <span data-i18n="footer.copy"></span>
+          <span>BAYHAN STUDIO</span>
+        </div>
+      </div>`;
+  }
+
+  document.querySelectorAll("[data-lang]").forEach((b) => b.addEventListener("click", () => setLanguage(b.dataset.lang)));
+  bindContacts();
   applyTranslations();
 
-  const toggle = document.querySelector(".menu-toggle");
-  const panel = document.getElementById("mobile-nav");
-
+  const burger = document.querySelector(".burger");
   const close = () => {
-    if (!panel || !toggle) return;
-    panel.classList.remove("is-open");
-    toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", t("nav.openMenu"));
-    document.body.classList.remove("nav-open");
-    panel.setAttribute("inert", "");
+    sheet?.classList.remove("is-open");
+    burger?.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-on");
   };
-
-  const open = () => {
-    panel.classList.add("is-open");
-    toggle.setAttribute("aria-expanded", "true");
-    toggle.setAttribute("aria-label", t("nav.closeMenu"));
-    document.body.classList.add("nav-open");
-    panel.removeAttribute("inert");
-    if (window.gsap) {
-      window.gsap.fromTo(
-        panel.querySelectorAll("a, .lang-switch"),
-        { y: 24, opacity: 0 },
-        { y: 0, opacity: 1, stagger: 0.06, duration: 0.55, ease: "power3.out" }
-      );
+  burger?.addEventListener("click", () => {
+    const open = burger.getAttribute("aria-expanded") === "true";
+    if (open) close();
+    else {
+      sheet.classList.add("is-open");
+      burger.setAttribute("aria-expanded", "true");
+      document.body.classList.add("menu-on");
     }
-  };
-
-  toggle?.addEventListener("click", () => {
-    const expanded = toggle.getAttribute("aria-expanded") === "true";
-    expanded ? close() : open();
   });
+  sheet?.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
 
-  panel?.querySelectorAll("a").forEach((link) => link.addEventListener("click", close));
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") close();
-  });
-
-  const onScroll = () => {
-    header?.classList.toggle("is-scrolled", window.scrollY > 12);
-  };
+  const onScroll = () => header?.classList.toggle("is-compact", window.scrollY > 12);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
-}
-
-export function applyContactConfig() {
-  bindTelegram(document);
 }

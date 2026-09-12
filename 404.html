@@ -3,50 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 — Not Found | BAYHAN STUDIO</title>
-  <meta name="description" content="This page does not exist. Return to the BAYHAN STUDIO homepage.">
+  <title>404 — BAYHAN STUDIO</title>
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="./404.html">
-  <meta property="og:title" content="404 — Not Found | BAYHAN STUDIO">
-  <meta property="og:site_name" content="BAYHAN STUDIO">
   <meta name="theme-color" content="#050505">
   <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css?v=5">
-  <link rel="stylesheet" href="./css/animations.css?v=5">
-  <link rel="stylesheet" href="./css/responsive.css?v=5">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body data-page="notFound">
-  <a class="skip-link" href="#content" data-i18n="nav.skip">Skip to content</a>
-  <div class="preloader" role="status">
-    <div>
-      <div class="preloader-brand">BAYHAN STUDIO</div>
-      <div class="preloader-bar"><span></span></div>
-      <div class="preloader-pct">0%</div>
-    </div>
-  </div>
-  <div class="page-veil" aria-hidden="true"><span>BAYHAN STUDIO</span></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
-  <div class="cursor-label" aria-hidden="true"></div>
-  <header class="site-header" id="site-header"></header>
-  <div class="mobile-nav" id="mobile-nav" inert></div>
-  <main id="content" class="not-found">
-    <div class="container">
-      <p class="display code" data-i18n="notFound.code">404</p>
-      <h1 class="display page-title" data-i18n="notFound.title">Not found.</h1>
-      <p class="lead" data-i18n="notFound.text"></p>
-      <a class="btn btn-primary magnetic" href="./index.html" data-cursor="go">
-        <span data-i18n="notFound.back"></span><span class="arrow">→</span>
-      </a>
+  <a class="skip" href="#content" data-i18n="nav.skip">Skip</a>
+  <div class="atmos"></div><div class="grid-lines"></div><div class="noise"></div>
+  <div class="cur-d"></div><div class="cur-r"></div><div class="cur-l"></div>
+  <div class="page-veil">BAYHAN</div>
+  <header class="nav" id="nav"></header>
+  <div class="sheet" id="sheet"></div>
+  <main id="content" class="lost">
+    <div class="wrap">
+      <p class="display big">404</p>
+      <h1 class="display" data-i18n="notFound.t"></h1>
+      <a class="btn" href="./index.html" style="margin-top:1.4rem"><span data-i18n="notFound.b"></span><span class="arr">→</span></a>
     </div>
   </main>
-  <footer class="site-footer" id="site-footer"></footer>
+  <footer class="foot" id="foot"></footer>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
-  <script type="module" src="./js/main.js?v=5"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>

@@ -4,135 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BAYHAN STUDIO — Digital Solutions for Business</title>
-  <meta name="description" content="BAYHAN STUDIO creates websites, Telegram bots, automation, CRM, application systems and AI assistants for modern businesses.">
+  <meta name="description" content="BAYHAN STUDIO builds websites, digital products, automation, Telegram bots and AI systems for business.">
   <link rel="canonical" href="./index.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="BAYHAN STUDIO — Digital Solutions for Business">
-  <meta property="og:description" content="BAYHAN STUDIO creates websites, Telegram bots, automation, CRM, application systems and AI assistants for modern businesses.">
+  <meta property="og:description" content="BAYHAN STUDIO builds websites, digital products, automation, Telegram bots and AI systems for business.">
   <meta property="og:site_name" content="BAYHAN STUDIO">
   <meta name="theme-color" content="#050505">
   <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./assets/icons/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css?v=5">
-  <link rel="stylesheet" href="./css/animations.css?v=5">
-  <link rel="stylesheet" href="./css/responsive.css?v=5">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body data-page="home">
-  <a class="skip-link" href="#content" data-i18n="nav.skip">Skip to content</a>
-  <div class="preloader" role="status">
-    <div>
-      <div class="preloader-brand">BAYHAN STUDIO</div>
-      <div class="preloader-bar"><span></span></div>
-      <div class="preloader-pct">0%</div>
-    </div>
-  </div>
-  <div class="page-veil" aria-hidden="true"><span>BAYHAN STUDIO</span></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
-  <div class="cursor-label" aria-hidden="true"></div>
-  <header class="site-header" id="site-header"></header>
-  <div class="mobile-nav" id="mobile-nav" inert></div>
+  <a class="skip" href="#content" data-i18n="nav.skip">Skip</a>
+  <div class="atmos" aria-hidden="true"></div>
+  <div class="grid-lines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cur-d" aria-hidden="true"></div>
+  <div class="cur-r" aria-hidden="true"></div>
+  <div class="cur-l" aria-hidden="true"></div>
+  <div class="page-veil" aria-hidden="true">BAYHAN</div>
+  <header class="nav" id="nav"></header>
+  <div class="sheet" id="sheet"></div>
   <main id="content">
     <section class="hero">
-      <div class="grid-bg" aria-hidden="true"></div>
-      <div class="container hero-grid">
+      <div class="wrap hero-layout">
         <div>
-          <p class="eyebrow hero-eyebrow" data-i18n="hero.eyebrow">Digital Agency / Technology Studio</p>
-          <h1 class="display hero-title">
-            <span class="line">BAYHAN</span>
-            <span class="line line-studio">STUDIO</span>
+          <div class="hero-meta">
+            <span data-i18n="hero.status"></span>
+            <span data-i18n="hero.place"></span>
+          </div>
+          <h1 class="display">
+            <span data-i18n="hero.line1">BAYHAN</span><br>
+            <span class="outline" data-i18n="hero.line2">STUDIO</span>
           </h1>
-          <div class="hero-copy">
-            <p class="hero-slogan">
-              <span data-i18n="hero.slogan1">Digital solutions</span><br>
-              <span data-i18n="hero.slogan2">for business.</span>
-            </p>
-            <p class="lead" data-i18n="hero.text"></p>
-            <div class="btn-row">
-              <a class="btn btn-primary magnetic js-telegram" href="#" target="_blank" rel="noopener noreferrer" data-cursor="open">
-                <span data-i18n="hero.cta"></span><span class="arrow">→</span>
-              </a>
-              <a class="btn btn-ghost magnetic" href="./services.html" data-cursor="explore">
-                <span data-i18n="hero.explore"></span><span class="arrow">→</span>
-              </a>
-            </div>
-            <div class="scroll-hint"><i></i><span data-i18n="hero.scroll"></span></div>
+          <p class="lead" data-i18n="hero.text"></p>
+          <a class="btn js-tg magnetic" href="#" target="_blank" rel="noopener noreferrer" data-cursor="GO">
+            <span data-i18n="hero.cta"></span><span class="arr">→</span>
+          </a>
+          <div class="scroll-ind"><i></i><span data-i18n="hero.scroll"></span></div>
+        </div>
+        <div class="hero-stage" aria-label="Interactive AI head">
+          <div class="hero-fallback">
+            <span class="eye l"></span>
+            <span class="eye r"></span>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <canvas class="hero-canvas"></canvas>
-          <div class="hero-orb"></div>
-        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container intro-layout">
-        <h2 class="display intro-title reveal">
-          <span data-i18n="intro.line1"></span><br>
-          <span data-i18n="intro.line2"></span><br>
-          <span data-i18n="intro.line3"></span>
-        </h2>
-        <p class="lead reveal" data-i18n="intro.text"></p>
-      </div>
-    </section>
-
-    <section class="section" id="services-preview">
-      <div class="container">
-        <p class="eyebrow reveal" data-i18n="servicesPreview.label"></p>
-        <h2 class="display page-title reveal" data-i18n="servicesPreview.title"></h2>
-        <div class="service-list" data-services-preview></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="display tech-title reveal">
-          <span data-i18n="tech.line1"></span><br>
-          <span data-i18n="tech.line2"></span>
-        </h2>
-        <div class="tech-marquee" data-tech></div>
-      </div>
-    </section>
-
-    <section class="section next-block">
-      <div class="container">
+    <section class="block manifesto">
+      <div class="wrap">
         <h2 class="display reveal">
-          <span data-i18n="next.line1"></span><br>
-          <span data-i18n="next.line2"></span>
+          <span data-i18n="manifesto.a1"></span><br>
+          <span data-i18n="manifesto.a2"></span><br>
+          <span data-i18n="manifesto.a3"></span><br><br>
+          <span data-i18n="manifesto.b1"></span><br>
+          <span data-i18n="manifesto.b2"></span><br>
+          <em data-i18n="manifesto.b3"></em>
         </h2>
-        <p class="lead reveal" data-i18n="next.text"></p>
-        <div class="btn-row">
-          <a class="btn btn-primary magnetic js-telegram" href="#" target="_blank" rel="noopener noreferrer" data-cursor="open">
-            <span data-i18n="ctaBlock.start"></span><span class="arrow">→</span>
-          </a>
+      </div>
+    </section>
+
+    <section class="block" id="services">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="services.label"></p>
+        <h2 class="display reveal" style="font-size:clamp(2.4rem,7vw,5.5rem);margin-bottom:2rem" data-i18n="services.title"></h2>
+        <div class="svc" data-svc></div>
+      </div>
+    </section>
+
+    <section class="horizon js-horizon" aria-hidden="true">
+      <div class="horizon-track">
+        <span>IDEA</span><span>DESIGN</span><span>CODE</span><span>AI</span><span>PRODUCT</span><span>IMPACT</span>
+        <span>IDEA</span><span>DESIGN</span><span>CODE</span><span>AI</span>
+      </div>
+    </section>
+
+    <section class="block" id="about">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="about.label"></p>
+        <h2 class="display reveal" data-i18n="about.title" data-i18n-html="true" style="font-size:clamp(2.2rem,6.4vw,5.4rem);white-space:pre-line"></h2>
+        <p class="muted reveal" style="max-width:38rem;margin-top:1.2rem" data-i18n="about.text"></p>
+        <div class="stats reveal" data-stats style="margin-top:2.5rem"></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-row">
+        <div class="marquee-track">
+          <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>PYTHON</span><span>AI</span><span>AUTOMATION</span>
+          <span>TELEGRAM</span><span>WEBGL</span><span>UI/UX</span><span>API</span>
+          <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>PYTHON</span><span>AI</span>
+        </div>
+      </div>
+      <div class="marquee-row reverse">
+        <div class="marquee-track">
+          <span>API</span><span>UI/UX</span><span>WEBGL</span><span>TELEGRAM</span><span>AUTOMATION</span><span>AI</span>
+          <span>PYTHON</span><span>JAVASCRIPT</span><span>CSS</span><span>HTML</span>
+          <span>API</span><span>UI/UX</span><span>WEBGL</span><span>TELEGRAM</span>
         </div>
       </div>
     </section>
 
-    <section class="section cta-finale">
-      <div class="container">
-        <h2 class="display reveal">
-          <span data-i18n="ctaBlock.line1"></span><br>
-          <span data-i18n="ctaBlock.line2"></span><br>
-          <span data-i18n="ctaBlock.line3"></span>
-        </h2>
-        <div class="btn-row">
-          <a class="btn btn-primary magnetic js-telegram" href="#" data-cursor="open" target="_blank" rel="noopener noreferrer"><span data-i18n="ctaBlock.start"></span><span class="arrow">→</span></a>
-          <a class="btn btn-ghost magnetic js-telegram" href="#" data-cursor="open" target="_blank" rel="noopener noreferrer"><span data-i18n="ctaBlock.order"></span><span class="arrow">→</span></a>
-          <a class="btn btn-ghost magnetic js-telegram" href="#" data-cursor="open" target="_blank" rel="noopener noreferrer"><span data-i18n="ctaBlock.request"></span><span class="arrow">→</span></a>
-          <a class="btn btn-ghost magnetic js-telegram" href="#" data-cursor="open" target="_blank" rel="noopener noreferrer"><span data-i18n="ctaBlock.discuss"></span><span class="arrow">→</span></a>
+    <section class="block">
+      <div class="wrap ai-grid">
+        <div>
+          <h2 class="display reveal" style="font-size:clamp(2.4rem,7vw,5.8rem)">
+            <span data-i18n="ai.a"></span><br>
+            <span data-i18n="ai.b"></span><br>
+            <span data-i18n="ai.c"></span>
+          </h2>
+          <p class="muted reveal" style="max-width:32rem;margin-top:1rem" data-i18n="ai.text"></p>
         </div>
+        <div class="core reveal" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="process.label"></p>
+        <h2 class="display reveal" style="font-size:clamp(2.2rem,6vw,4.6rem)" data-i18n="process.title"></h2>
+        <div class="steps" data-steps></div>
+      </div>
+    </section>
+
+    <section class="block finale">
+      <div class="wrap">
+        <h2 class="display reveal">
+          <span data-i18n="cta.a"></span><br>
+          <span data-i18n="cta.b"></span>
+        </h2>
+        <a class="btn js-tg magnetic reveal" href="#" target="_blank" rel="noopener noreferrer" data-cursor="GO" style="margin-top:1.6rem">
+          <span data-i18n="cta.btn"></span><span class="arr">→</span>
+        </a>
       </div>
     </section>
   </main>
-  <footer class="site-footer" id="site-footer"></footer>
+  <footer class="foot" id="foot"></footer>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
-  <script type="module" src="./js/main.js?v=5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js" defer></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
